@@ -1,0 +1,39 @@
+<div style="text-align:left">
+    <h3>
+        Add 
+    </h3>
+    <form [formGroup]="creditCardForm" novalidate (ngSubmit)="submitCreditCardForm(creditCardForm.value)">
+        <!-- <div class="formfield">
+            <input type="text" formControlName="id" hidden>
+        </div> -->
+        <div class="container">
+            <div class="formfield">
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" placeholder="Enter Name" formControlName="creditHolder"
+                        id="creditHolder">
+                    <mat-error *ngIf="myError('creditHolder', 'required')">Name is required</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="formfield">
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" placeholder="Enter Card Number" formControlName="creditCardNumber"
+                        id="creditCardNumber">
+                    <mat-error *ngIf="myError('creditCardNumber', 'required')">Card Number is required</mat-error>
+                    <mat-error *ngIf="myError('creditCardNumber', 'maxlength')">Limit exceed</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="formfield">
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" placeholder="Enter Card Limit" formControlName="creditLimit"
+                        id="creditLimit">
+                    <mat-error *ngIf="myError('creditLimit', 'required')">Card Limit is required</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="submit">
+                <button mat-raised-button type="submit">Add</button>
+            </div>
+        </div>
+    </form>
+    <!-- <p>creditCardForm value: {{ creditCardForm.value | json }}</p>
+    <p>creditCardForm status: {{ creditCardForm.status | json }}</p> -->
+</div>
