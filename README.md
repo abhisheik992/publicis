@@ -1,37 +1,37 @@
 # publicis
 
 <h3>#publicis </h3>
- publicis app is a backend written in Java with Springbootusing H2 in memory DB. 
- EndPoints: 
- Add Card: 
- Endpoint: http://localhost:8080/api/v1/card
- Method: POST
- request:{
+ <p>publicis app is a backend written in Java with Springbootusing H2 in memory DB. </p>
+ <h5>EndPoints: </h5>
+ <h6>Add Card: </h6>
+ <p>Endpoint:</p> http://localhost:8080/api/v1/card
+ <p>Method:</p> POST
+ <p>request:</p>{
     "creditHolder":"Teju",
     "creditCardNumber":79927398733,
     "creditLimit": 2000
 	}
- Get Existing Cards:
- Endpoint: http://localhost:8080/api/v1/cards
- Method: GET
+ <h6>Get Existing Cards:</h6>
+ <p>Endpoint:</p> http://localhost:8080/api/v1/cards
+ <p>Method:</p> GET
 <h3>#publicis-nodejs</h3>
- publicis-nodejs app is a backend written in Node with Express using Mongo DB. 
- EndPoints: 
- Add Card: 
- Endpoint: http://localhost:3002/cards
- Method: POST
- request:{
+  <p>publicis-nodejs app is a backend written in Node with Express using Mongo DB. </p>
+ <h5>EndPoints: </h5> 
+<h6>Add Card: </h6> 
+ <p>Endpoint:</p> http://localhost:3002/cards
+ <p>Method:</p> POST
+ <p>request:</p>{
     "creditHolder":"Teju",
     "creditCardNumber":79927398733,
     "creditLimit": 2000
 	}
- Get Existing Cards:
- Endpoint: http://localhost:3002/cards
- Method: GET
+ <h6>Get Existing Cards:</h6>
+ <p>Endpoint:</p> http://localhost:3002/cards
+ <p>Method:</p> GET
 
 <h3>#publicis-ui</h3>
-  publicis-ui app is a frontend written in Reacj Js with hooks and css.
+   <p>publicis-ui app is a frontend written in Reacj Js with hooks and css.</p>
 
 
 <h3>#publicis-ui-angular</h3>
- publicis-ui-angular app is a frontend written in Angular with Material.
+  <p>publicis-ui-angular app is a frontend written in Angular with Material.</p>
